@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets: never commit API keys
+.env
+.streamlit/secrets.toml
+
+# Downloaded / generated data, rebuilt automatically at runtime.
+# MOT GTFS feed (~135 MB) + built network (~65 MB): over GitHub's 100 MB file limit
+.gtfs/
+# osmnx HTTP cache
+cache/
+# OSRM road shapes / Overpass stop lookups
+.geometry_cache.json
+.transit_cache.json
+*.tmp
+*.part
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
